@@ -1,16 +1,16 @@
 ⚙️ A tiny property wrapper for UserDefaults. Only 60 lines of code. 
 
 ```swift
-import UserDefault
+import Persistent
 
 extension UserDefaults {
     
     // Optional property
-    @UserDefault("login", .standard)
+    @Persistent("login", .standard)
     static var login: String?
     
     // Property with default value
-    @UserDefault("isDarkMode", false)
+    @Persistent("isDarkMode", false)
     static var isDarkMode: Bool
 }
 ```
@@ -30,7 +30,7 @@ UserDefaults.isDarkMode = true
 
 ### Swift Package Manager
 ```
-https://github.com/mezhevikin/userdefault.git
+https://github.com/mezhevikin/persistent.git
 ```
 
 Inspired [Antonie Van Der Lee](https://www.avanderlee.com/swift/property-wrappers/)
