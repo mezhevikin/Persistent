@@ -21,7 +21,7 @@ final class PersistentTests: XCTestCase {
         XCTAssertEqual(UserDefaults.standard.string(forKey: "login"), "mezhevikin")
         UserDefaults.login = nil
         XCTAssertNil(UserDefaults.login)
-        XCTAssertNil(UserDefaults.standard.string(forKey: "username"))
+        XCTAssertNil(UserDefaults.standard.string(forKey: "login"))
     }
     
     func testCombine() throws {
